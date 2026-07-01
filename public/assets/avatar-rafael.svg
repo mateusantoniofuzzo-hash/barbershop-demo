@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Avatar do barbeiro Rafael">
+  <rect width="220" height="220" rx="32" fill="#20201f"/>
+  <circle cx="110" cy="88" r="50" fill="#d8b980"/>
+  <path d="M54 196c10-50 37-76 56-76s46 26 56 76" fill="#31363a"/>
+  <path d="M60 84c8-38 32-59 64-56 27 3 43 21 45 48-29-9-68-9-109 8z" fill="#111"/>
+  <path d="M78 122c20 19 45 20 64 0-2 27-13 40-32 40s-30-13-32-40z" fill="#171717" opacity=".34"/>
+  <path d="M74 164h72" stroke="#b08d4d" stroke-width="9" stroke-linecap="round"/>
+</svg>

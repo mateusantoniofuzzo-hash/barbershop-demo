@@ -1,0 +1,17 @@
+{
+  "name": "barbearia-agendamentos-mvp",
+  "version": "1.0.0",
+  "description": "MVP funcional para gestao de agendamentos de barbearia.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "barbearia",
+    "agendamento",
+    "mvp"
+  ],
+  "author": "",
+  "license": "MIT"
+}

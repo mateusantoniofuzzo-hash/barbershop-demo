@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Avatar do barbeiro Diego">
+  <rect width="220" height="220" rx="32" fill="#171a19"/>
+  <circle cx="110" cy="86" r="49" fill="#bb8f5a"/>
+  <path d="M55 196c10-48 36-72 55-72s45 24 55 72" fill="#252321"/>
+  <path d="M58 84c5-38 28-58 60-56 31 2 47 21 48 51-37-8-66-8-108 5z" fill="#2f2a22"/>
+  <path d="M78 108c18 25 47 25 64 0-1 32-13 48-32 48s-31-16-32-48z" fill="#101010" opacity=".34"/>
+  <path d="M91 165c13 7 25 7 38 0" stroke="#cfa85b" stroke-width="8" stroke-linecap="round"/>
+</svg>

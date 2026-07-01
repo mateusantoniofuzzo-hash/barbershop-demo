@@ -1,0 +1,378 @@
+{
+  "settings": {
+    "shopName": "Barbearia Prime",
+    "whatsapp": "5511999999999",
+    "address": "Rua das Navalhas, 120",
+    "serviceName": "Corte masculino",
+    "defaultDuration": 45
+  },
+  "users": [
+    {
+      "id": "user_admin",
+      "name": "Admin Prime",
+      "email": "admin@barbearia.local",
+      "phone": "11999999999",
+      "passwordHash": "scrypt:438a51c7e45fc769eb67660e723e00e8:046da4ccf6b94faca6b7355a1b2ae87398354c8f9fb65066a5b071c178688e931a23ae9f5050357a928db50e302ce1905fef857b7df9f75baf02f5bf5d59cbce",
+      "role": "admin",
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    },
+    {
+      "id": "user_client_demo",
+      "name": "João Cliente",
+      "email": "cliente@barbearia.local",
+      "phone": "11988887777",
+      "passwordHash": "scrypt:8891800f636a631c056a074c9492c4f7:70a1e6df3ac0b312acf8b579eeeef30e440a8c14857b97e0e8c17d355d375e17bc3453f4011e7a5ea7f01504d62f5e0b4c652edede26f2c24cfc904ba3367645",
+      "role": "client",
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    },
+    {
+      "id": "user_barber_marcos",
+      "name": "Marcos Silva",
+      "email": "marcos@barbearia.local",
+      "phone": "11977776666",
+      "passwordHash": "scrypt:6043fb8d234137c6ee3e98b13f550169:d0847d6848667f4c4f5eda1e6b1e48825b74e0bf896b9022fc0a6b0ee5970fdebd0786dc1c23a7d16e5ebd8b1cb26b586b92358f77adfcac2ce0e9c34873c15e",
+      "role": "barber",
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    },
+    {
+      "id": "user_barber_rafael",
+      "name": "Rafael Costa",
+      "email": "rafael@barbearia.local",
+      "phone": "11966665555",
+      "passwordHash": "scrypt:0418a5c4ec895522696768131303448c:803208a4b1bd51479b740d47f026b135d3e93e54aea36e0fabf90bca576513eaf2ddd5c703e4c940ec16c36034d7eb79af757d5dc4638a76f6b9b1c65ee9b565",
+      "role": "barber",
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    },
+    {
+      "id": "user_barber_diego",
+      "name": "Diego Lima",
+      "email": "diego@barbearia.local",
+      "phone": "11955554444",
+      "passwordHash": "scrypt:054ea3a8acb3d47c68cc712ed63cdeab:421cadeb56b7b586ddcca90be8257d64d45b5fb1aea5e9c3d7ec76eb8de413d4a31dc877b3b30154c171d5e1a54d703c6df451c4234ebf576fe6d06022b49e45",
+      "role": "barber",
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    }
+  ],
+  "clients": [
+    {
+      "id": "client_demo",
+      "userId": "user_client_demo",
+      "name": "João Cliente",
+      "phone": "11988887777",
+      "email": "cliente@barbearia.local",
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    }
+  ],
+  "barbers": [
+    {
+      "id": "barber_marcos",
+      "userId": "user_barber_marcos",
+      "name": "Marcos Silva",
+      "avatar": "/assets/avatar-marcos.svg",
+      "description": "Cortes clássicos, degradê limpo e barba desenhada.",
+      "price": 55,
+      "whatsapp": "5511977776666",
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    },
+    {
+      "id": "barber_rafael",
+      "userId": "user_barber_rafael",
+      "name": "Rafael Costa",
+      "avatar": "/assets/avatar-rafael.svg",
+      "description": "Especialista em freestyle discreto, navalhado e acabamento premium.",
+      "price": 65,
+      "whatsapp": "5511966665555",
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    },
+    {
+      "id": "barber_diego",
+      "userId": "user_barber_diego",
+      "name": "Diego Lima",
+      "avatar": "/assets/avatar-diego.svg",
+      "description": "Atendimento rápido para corte social, barba e manutenção semanal.",
+      "price": 50,
+      "whatsapp": "5511955554444",
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    }
+  ],
+  "schedules": [
+    {
+      "id": "slot_c18e59ed174347",
+      "barberId": "barber_marcos",
+      "weekday": 0,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 45,
+      "active": false,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_a9ba5f4698094d",
+      "barberId": "barber_marcos",
+      "weekday": 1,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_4ed1ada5998b48",
+      "barberId": "barber_marcos",
+      "weekday": 2,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_5a8e6d3acf0a46",
+      "barberId": "barber_marcos",
+      "weekday": 3,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_7efab8ea60534c",
+      "barberId": "barber_marcos",
+      "weekday": 4,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_d8cfa0318e154b",
+      "barberId": "barber_marcos",
+      "weekday": 5,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_57eeb182b34543",
+      "barberId": "barber_marcos",
+      "weekday": 6,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_98d389d8265541",
+      "barberId": "barber_rafael",
+      "weekday": 0,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 45,
+      "active": false,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_8e618a2371d145",
+      "barberId": "barber_rafael",
+      "weekday": 1,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 45,
+      "active": false,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_dff619d6378540",
+      "barberId": "barber_rafael",
+      "weekday": 2,
+      "start": "10:00",
+      "end": "19:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_fa30b32343bb43",
+      "barberId": "barber_rafael",
+      "weekday": 3,
+      "start": "10:00",
+      "end": "19:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_a8c4412c9bab45",
+      "barberId": "barber_rafael",
+      "weekday": 4,
+      "start": "10:00",
+      "end": "19:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_51ba1943e4e04c",
+      "barberId": "barber_rafael",
+      "weekday": 5,
+      "start": "10:00",
+      "end": "19:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_37051097648549",
+      "barberId": "barber_rafael",
+      "weekday": 6,
+      "start": "10:00",
+      "end": "19:00",
+      "duration": 45,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_bf0168795c0b45",
+      "barberId": "barber_diego",
+      "weekday": 0,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 30,
+      "active": false,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_b532132ba78e46",
+      "barberId": "barber_diego",
+      "weekday": 1,
+      "start": "08:30",
+      "end": "17:30",
+      "duration": 30,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_7b824ecfe0f946",
+      "barberId": "barber_diego",
+      "weekday": 2,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 30,
+      "active": false,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_2ce06d4ee9804d",
+      "barberId": "barber_diego",
+      "weekday": 3,
+      "start": "08:30",
+      "end": "17:30",
+      "duration": 30,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_ca70ecc365bb49",
+      "barberId": "barber_diego",
+      "weekday": 4,
+      "start": "09:00",
+      "end": "18:00",
+      "duration": 30,
+      "active": false,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_b8b7bbeb570343",
+      "barberId": "barber_diego",
+      "weekday": 5,
+      "start": "08:30",
+      "end": "17:30",
+      "duration": 30,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    },
+    {
+      "id": "slot_03be832cdac74b",
+      "barberId": "barber_diego",
+      "weekday": 6,
+      "start": "08:30",
+      "end": "17:30",
+      "duration": 30,
+      "active": true,
+      "createdAt": "2026-07-01T01:13:38.403Z"
+    }
+  ],
+  "blockedSlots": [
+    {
+      "id": "block_lunch_marcos",
+      "barberId": "barber_marcos",
+      "date": "2026-07-01",
+      "time": "12:00",
+      "reason": "Intervalo",
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "appt_demo_1",
+      "clientId": "client_demo",
+      "barberId": "barber_marcos",
+      "date": "2026-07-07",
+      "time": "10:30",
+      "value": 55,
+      "service": "Corte masculino",
+      "status": "Confirmado",
+      "notes": "Cliente demo",
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    },
+    {
+      "id": "appt_demo_2",
+      "clientId": "client_demo",
+      "barberId": "barber_rafael",
+      "date": "2026-07-03",
+      "time": "14:30",
+      "value": 65,
+      "service": "Corte + barba",
+      "status": "Agendado",
+      "notes": "",
+      "createdAt": "2026-07-01T01:13:38.234Z"
+    },
+    {
+      "id": "appt_26651e538c8642",
+      "clientId": "client_demo",
+      "barberId": "barber_marcos",
+      "date": "2026-07-01",
+      "time": "09:45",
+      "value": 55,
+      "service": "Corte masculino",
+      "status": "Agendado",
+      "notes": "",
+      "createdAt": "2026-07-01T01:16:53.239Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "8d46ec8a74de8719946a865381b061e39f6803bc8bc5197870886897b933d1ab",
+      "userId": "user_admin",
+      "createdAt": "2026-07-01T01:13:38.453Z"
+    },
+    {
+      "token": "67fdf53d362d3c87d27faf4c818d026a172334217ece040ed4409370e7372185",
+      "userId": "user_admin",
+      "createdAt": "2026-07-01T01:17:54.364Z"
+    }
+  ]
+}
