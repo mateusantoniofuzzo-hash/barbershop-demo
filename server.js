@@ -6,7 +6,7 @@ const { URL } = require('url');
 
 const ROOT = __dirname;
 const PUBLIC_DIR = path.join(ROOT, 'public');
-const DATA_DIR = path.join(ROOT, 'data');
+const DATA_DIR = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(ROOT, 'data');
 const DB_FILE = path.join(DATA_DIR, 'db.json');
 const PORT = Number(process.env.PORT || 3000);
 
@@ -93,14 +93,14 @@ function seedDatabase() {
 
   const db = {
     settings: {
-      shopName: 'Barbearia Prime',
-      whatsapp: '5511999999999',
-      address: 'Rua das Navalhas, 120',
-      serviceName: 'Corte masculino',
-      defaultDuration: 45
+      shopName: env('SHOP_NAME', 'Barbearia Prime'),
+      whatsapp: env('SHOP_WHATSAPP', '5511999999999'),
+      address: env('SHOP_ADDRESS', 'Rua das Navalhas, 120'),
+      serviceName: env('SHOP_SERVICE_NAME', 'Corte masculino'),
+      defaultDuration: Number(env('SHOP_DEFAULT_DURATION', '45'))
     },
     users: [
-      { id: adminId, name: 'Admin Prime', email: 'admin@barbearia.local', phone: '11999999999', passwordHash: hashPassword('Admin123!'), role: 'admin', active: true, createdAt },
+      { id: adminId, name: env('ADMIN_NAME', 'Admin Prime'), email: cleanEmail(env('ADMIN_EMAIL', 'admin@barbearia.local')), phone: cleanPhone(env('ADMIN_PHONE', '11999999999')), passwordHash: hashPassword(env('ADMIN_PASSWORD', 'Admin123!')), role: 'admin', active: true, createdAt },
       { id: clientId, name: 'João Cliente', email: 'cliente@barbearia.local', phone: '11988887777', passwordHash: hashPassword('Cliente123!'), role: 'client', active: true, createdAt },
       { id: barberUser1, name: 'Marcos Silva', email: 'marcos@barbearia.local', phone: '11977776666', passwordHash: hashPassword('Barber123!'), role: 'barber', active: true, createdAt },
       { id: barberUser2, name: 'Rafael Costa', email: 'rafael@barbearia.local', phone: '11966665555', passwordHash: hashPassword('Barber123!'), role: 'barber', active: true, createdAt },
@@ -404,6 +404,10 @@ function appointmentsSorted(items) {
 }
 
 async function handleApi(req, res, pathname, query) {
+  if (req.method === 'GET' && pathname === '/api/health') {
+    return sendJson(res, 200, { ok: true, service: 'barbearia-prime', time: nowIso() });
+  }
+
   let db = readDb();
 
   if (req.method === 'GET' && pathname === '/api/bootstrap') {

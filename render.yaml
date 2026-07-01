@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: barbearia-prime
+    env: node
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /var/data
+      - key: SHOP_NAME
+        value: Barbearia Prime
+      - key: SHOP_WHATSAPP
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+    disk:
+      name: barbearia-data
+      mountPath: /var/data
+      sizeGB: 1

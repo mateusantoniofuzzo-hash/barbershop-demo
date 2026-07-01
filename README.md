@@ -30,3 +30,6 @@ Acesse: http://localhost:3000
 ## Observação técnica
 
 O MVP não depende de serviços externos. A estrutura foi mantida simples para permitir troca futura da camada de persistência por Supabase, Firebase ou SQLite sem reescrever a interface.
+## Publicar
+
+Este app precisa de uma hospedagem Node.js para ficar acessivel publicamente. Veja o passo a passo em [DEPLOY.md](DEPLOY.md).
